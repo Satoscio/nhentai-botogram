@@ -27,6 +27,16 @@ need to download his library to make this bot work
 * The **/random** command now also checks for inexistent IDs and writes it in chat.
 * Fixed GitHub link in the **/github** function... (I just really love to copy/paste, don't hate me)
 
+### **NEW FEATURES!11!!1!**
+
+* The bot will hate you if you search for 177013. Well, not really but it will write a chat message.
+
+### **TODO**
+
+* Custom messages for certain characters, tags, etc. (yes, [Alexzan](https://github.com/AlexzanDev) I heard you loud and clear...)
+* Add more banned doujins to the list.
+* The bot will hate you even more if you search for banned doujins more than just once.
+
 ## **BIG THANKS TO**
 
 * [exentio](http://github.com/exentio), for making a wonderful Python library
@@ -37,7 +47,7 @@ need to download his library to make this bot work
 
 
 ### *And remember...*
-## **FUCK GIT AND**
+### **FUCK GIT AND**
 ![FUCK MIKO INO](https://i.imgur.com/hBUFGxw.jpg)
 
 ### Just kidding, I don't really hate her...
