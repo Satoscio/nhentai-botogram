@@ -22,6 +22,11 @@ need to download his library to make this bot work
 * **/start** - is this a feature?
 * **/github** - it's not like I want other people to see my code, b-baka! 
 
+### **FIXES** - 2020-05-08
+
+* The **/random** command now also checks for inexistent IDs and writes it in chat.
+* Fixed GitHub link in the **/github** function... (I just really love to copy/paste, don't hate me)
+
 ## **BIG THANKS TO**
 
 * [exentio](http://github.com/exentio), for making a wonderful Python library
@@ -32,5 +37,7 @@ need to download his library to make this bot work
 
 
 ### *And remember...*
-
+## **FUCK GIT AND**
 ![FUCK MIKO INO](https://i.imgur.com/hBUFGxw.jpg)
+
+### Just kidding, I don't really hate her...

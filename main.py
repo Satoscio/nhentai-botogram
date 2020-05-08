@@ -2,7 +2,7 @@ from random import randint
 from nhentai import Nhentai
 import botogram
 
-bot = botogram.create("BOT TOKEN")
+bot = botogram.create("TOKEN")
 
 @bot.command("search")
 def search_command(chat, message, args):
@@ -12,6 +12,8 @@ def search_command(chat, message, args):
         try:
             if Nhentai().book_info(int(args[0]))["title"]:
                 chat.send("https://nhentai.net/g/" + str(args[0]))
+                if (int(args[0]) == 177013):
+                    chat.send("God damn it, I can't believe you're really doing this.")
         except KeyError:
             chat.send("404 Not Found")
         except ValueError:
@@ -23,7 +25,12 @@ def latest_command(chat, message, args):
 
 @bot.command("random")
 def random_command(chat, message, args):
-    chat.send("https://nhentai.net/g/" + str(randint(1, Nhentai().latest_id())))
+    random_nhid = randint(1, Nhentai().latest_id())
+    try:
+        if Nhentai().book_info(random_nhid)["title"]:
+            chat.send("https://nhentai.net/g/" + str(random_nhid))
+    except KeyError:
+            chat.send("Sorry, the ID I just generated doesn't exist: it may have been deleted.\nPlease try again.")
 
 @bot.command("info")
 def info_command(chat, message, args):
@@ -37,12 +44,13 @@ def info_command(chat, message, args):
                                     "*Short title*: " + str(dictx["title"]["pretty"]) +
                                     "\n*English title*: " + str(Nhentai().book_title(int(args[0]))) + 
                                     "\n*Japanese title*: " + str(Nhentai().book_title_jp(int(args[0]))) +
-                                    "\n*Author*: " + str(Nhentai().book_artists(int(args[0]), return_string=True)) +
+                                    "\n*Author(s)*: " + str(Nhentai().book_artists(int(args[0]), return_string=True)) +
                                     "\n*Language*: " + str(Nhentai().book_language(int(args[0]), return_string = True)) +
                                     "\n*Pages*: " + str(Nhentai().book_pagenum(int(args[0]))) + 
                                     "\n\n*Tags*: " + str(Nhentai().book_tags(int(args[0]), return_string = True)) + 
-                                    "\n\n*Read it here*: https://nhentai.net/g/" + str(int(args[0])), syntax="markdown")
-
+                                    "\n\n*Fucking jerk off to it here*: https://nhentai.net/g/" + str(int(args[0])), syntax="markdown")
+                if (int(args[0]) == 177013):
+                    chat.send("God damn it, I can't believe you're really doing this.")
         except KeyError:
             chat.send("404 Not Found")
         except ValueError:
@@ -56,7 +64,7 @@ def start_command(chat, message, args):
 @bot.command("source")
 def source_command(chat, message, args):
     """Bot source code on GitHub"""
-    chat.send("Bot Source: https://github.com/Satoscio/nhentai-rng-bot")
+    chat.send("Bot Source: https://github.com/Satoscio/nhentai-botogram")
 
 if __name__ == "__main__":
     bot.run()
