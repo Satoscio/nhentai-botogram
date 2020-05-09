@@ -20,12 +20,12 @@ need to download his library to make this bot work
   group because the cover image is NSFW**),
   titles (short, english, japanese), number of pages, author, language and all tags.
 * **/start** - is this a feature?
-* **/github** - it's not like I want other people to see my code, b-baka! 
+* **/source** - it's not like I want other people to see my code, b-baka! 
 
 ### **FIXES** - 2020-05-08
 
 * The **/random** command now also checks for inexistent IDs and writes it in chat.
-* Fixed GitHub link in the **/github** function... (I just really love to copy/paste, don't hate me)
+* Fixed GitHub link in the **/source** function... (I just really love to copy/paste, don't hate me)
 
 ### **NEW FEATURES!11!!1!**
 
