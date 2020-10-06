@@ -1,5 +1,5 @@
-from random import randint
 from nhentai import Nhentai
+import requests
 import botogram
 
 bot = botogram.create("TOKEN")
@@ -25,12 +25,9 @@ def latest_command(chat, message, args):
 
 @bot.command("random")
 def random_command(chat, message, args):
-    random_nhid = randint(1, Nhentai().latest_id())
-    try:
-        if Nhentai().book_info(random_nhid)["title"]:
-            chat.send("https://nhentai.net/g/" + str(random_nhid))
-    except KeyError:
-            chat.send("Sorry, the ID I just generated doesn't exist: it may have been deleted.\nPlease try again.")
+    r = requests.get("https://nhentai.net/random/", allow_redirects=False)
+    random_nhid = r.headers['Location']
+    chat.send("https://nhentai.net" + str(random_nhid))
 
 @bot.command("info")
 def info_command(chat, message, args):
