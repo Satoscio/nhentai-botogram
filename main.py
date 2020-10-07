@@ -12,8 +12,6 @@ def search_command(chat, message, args):
         try:
             if Nhentai().book_info(int(args[0]))["title"]:
                 chat.send("https://nhentai.net/g/" + str(args[0]))
-                if (int(args[0]) == 177013):
-                    chat.send("God damn it, I can't believe you're really doing this.")
         except KeyError:
             chat.send("404 Not Found")
         except ValueError:
@@ -47,10 +45,9 @@ def info_command(chat, message, args):
                                     "\n*Author(s)*: " + str(Nhentai().book_artists(int(args[0]), return_string=True)) +
                                     "\n*Language*: " + str(Nhentai().book_language(int(args[0]), return_string = True)) +
                                     "\n*Pages*: " + str(Nhentai().book_pagenum(int(args[0]))) + 
+                                    "\n*Category*: " + str(Nhentai().book_category(int(args[0]))) + 
                                     "\n\n*Tags*: " + str(Nhentai().book_tags(int(args[0]), return_string = True)) + 
                                     "\n\n*Fucking jerk off to it here*: https://nhentai.net/g/" + str(int(args[0])), syntax="markdown")
-                if (int(args[0]) == 177013):
-                    chat.send("God damn it, I can't believe you're really doing this.")
         except KeyError:
             chat.send("404 Not Found")
         except ValueError:
@@ -58,8 +55,8 @@ def info_command(chat, message, args):
 
 @bot.command("start")
 def start_command(chat, message, args):
-    """WIP"""
-    chat.send("WIP")
+    """Hello"""
+    chat.send("Welcome to this fucking bot.")
 
 @bot.command("source")
 def source_command(chat, message, args):

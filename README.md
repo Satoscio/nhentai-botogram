@@ -7,9 +7,13 @@ and therefore you do not feel the urge to read hentai.**
 This bot uses exentio's nhentai API Python wrapper, so you'll also
 need to download his library to make this bot work
 
-## Update 2020-05-08
+## Update 2020-10-07
 
-### **FEATURES!**
+### **I'm back on crack.**
+* Updated `README.md`
+
+
+### **FEATURES**
 * **/random** - this command will generate a random ID between 1 and the
   latest nhentai ID
 * **/latest** - do I have to tell you what this command does?
@@ -20,34 +24,33 @@ need to download his library to make this bot work
   group because the cover image is NSFW**),
   titles (short, english, japanese), number of pages, author, language and all tags.
 * **/start** - is this a feature?
-* **/source** - it's not like I want other people to see my code, b-baka! 
+* **/source** - it's not like I want other people to see my code, b-baka! *<-- I regret this*
 
-### **FIXES** - 2020-05-08
+### **NEW FEATURES**
 
-* The **/random** command now also checks for inexistent IDs and writes it in chat.
-* Fixed GitHub link in the **/source** function... (I just really love to copy/paste, don't hate me)
+* the **/info** command now displays the entry's category (be it manga or doujinshi)
 
-### **NEW FEATURES!11!!1!**
+### **REMOVED FEATURES**
 
 * The bot will hate you if you search for 177013. Well, not really but it will write a chat message.
 
-### **TODO**
+### **TO-DO**
 
-* Custom messages for certain characters, tags, etc. (yes, [Alexzan](https://github.com/AlexzanDev) I heard you loud and clear...)
-* Add more banned doujins to the list.
-* The bot will hate you even more if you search for banned doujins more than just once.
+* I removed the to-do stuff because it is unfeasible for a rookie like me. Fuck my life.
+
+### **WORKING ON IT**
+
+* Custom messages for certain characters, tags, etc.
 
 ## **BIG THANKS TO**
 
-* [exentio](http://github.com/exentio), for making a wonderful Python library
-  for us to use :D @ https://github.com/exentio/nhentai_api
-* [Michele](https://github.com/xMicky24GIT), for helping me with the
-  Botogram framework (I'm a fucking dumbass aight)
-* The folks at [Botogram](https://botogram.dev/) for making this possible
+* [exentio](http://github.com/exentio) for making an easy to use Python library
+  for us @ https://github.com/exentio/nhentai_api
+* [Michele](https://github.com/xMicky24GIT) for helping me with the
+  Botogram framework *(I'm a fucking dumbass)*
+* [Botogram](https://botogram.dev/) for making it easy to program a bot for Telegram.
 
 
-### *And remember...*
-### **FUCK GIT AND**
-![FUCK MIKO INO](https://i.imgur.com/hBUFGxw.jpg)
-
-### Just kidding, I don't really hate her...
+### *Fun facts!*
+* Fuck git
+* No exentio, I don't want your fucking estrogens
