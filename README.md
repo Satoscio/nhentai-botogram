@@ -7,6 +7,12 @@ and therefore you do not feel the urge to read hentai.**
 This bot uses exentio's nhentai API Python wrapper, so you'll also
 need to download his library to make this bot work
 
+## Update 2022-12-05 - ATTENTION, IMPORTANT!
+
+### THIS BOT IS CURRENTLY NOT WORKING: THE NHENTAI API IS BROKEN AND MY FRIEND CAN'T FIX HIS LIBRARY AT THE MOMENT. THANK YOU FOR YOUR UNDERSTANDING.
+
+* Updated `README.md`
+
 ## Update 2020-10-07
 
 ### **I'm back on crack.**
