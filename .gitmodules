@@ -1,0 +1,3 @@
+[submodule "nhentai_api"]
+	path = nhentai_api
+	url = https://github.com/exentio/nhentai_api

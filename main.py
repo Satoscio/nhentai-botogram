@@ -1,5 +1,5 @@
 from random import randint
-from nhentai import Nhentai
+from nhentai_api.nhentai import Nhentai
 import botogram
 
 bot = botogram.create("TOKEN")
